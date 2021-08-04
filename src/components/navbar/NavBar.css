@@ -7,13 +7,39 @@
 }
 
 .nav-bar{
+    display:flex;
     height: 60px;
     background-color: #fff;
     box-shadow: none;
 }
 
+#header{
+    background-color: red;
+}
+.items-container{
+    margin-left: -120px;
+}
+
 .nav-items{
     color: black;
-    font-size: 23px;
+    font-weight: 400;
     text-transform: uppercase;
+    font-family: Arial;
+    font-size: 26px;
 }
+
+.fas{
+    margin: auto;
+    height: 18px;
+    padding: 0 20px;
+}
+
+.fab{
+    padding: 0 10px;
+}
+
+/* .container{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+} */
