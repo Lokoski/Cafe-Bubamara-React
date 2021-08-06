@@ -1,23 +1,46 @@
-.home-page{
+.home-page {
     background-image: url(../../assets/images/cafe-slider.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     position: relative;
-    height: 687px;
-    margin-top:60px;
+    height: 750px;
+
 }
 
-.home-page ::before {
+/* .home-page ::before {
     content: "";
+    display: block;
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     background: black;
-    opacity: 0.1;
-  }
+    opacity: 0.2;
+  } */
 
-  
+.description {
+    font-family: Alice;
+    font-size: 40px;
+    line-height: 50px;
+    padding-top: 250px;
+    text-align: center;
+    color: white;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
 
+/* Reso Border */
+.reso-border {
+    width: 230px;
+    height: 230px;
+    background: #F9F9EC;
+    border-radius: 140px;
+    margin: auto;
+    border: 3px dashed #000000;
+    box-sizing: border-box;
+}
+
+.reso-border > p{
+
+}

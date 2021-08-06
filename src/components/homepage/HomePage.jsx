@@ -3,20 +3,11 @@ import React from 'react'
 const HomePage = () => {
     return (
         <div className="home-page">
-            <h1>hello</h1>
-            <h1>hello</h1>
-
-            <h1>hello</h1>
-
-            <h1>hello</h1>
-
-            <h1>hello</h1>
-
-            <h1>hello</h1>
-
-            <h1>hello</h1>
-
-
+            <p className="description">A cozy, homey cafe featuring Balkan
+             comfort cuisine & desserts with
+              inviting indoor and outdoor seating.</p>
+              <div className="reso-border"><p>FOR PARTIES OF 9 OR MORE PLEASE CALL</p></div>
+              
         </div>
     )
 }
