@@ -4,6 +4,7 @@
     margin-right: auto;
     width: 50%;
     padding: 20px 0;
+    overflow: auto
 }
 
 .nav-bar{
@@ -15,6 +16,7 @@
 
 #header{
     background-color: red;
+    overflow: auto
 }
 .items-container{
     margin-left: -120px;
@@ -32,6 +34,7 @@
     margin: auto;
     height: 18px;
     padding: 0 20px;
+    overflow: auto
 }
 
 .fab{
