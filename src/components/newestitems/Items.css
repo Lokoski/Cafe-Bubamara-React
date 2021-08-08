@@ -1,0 +1,28 @@
+.newest-items-container>h1 {
+    padding-top: 25px;
+    text-align: center;
+}
+
+.newest-items-container {
+    width: 100vw;
+    height: 535px;
+    background: radial-gradient(70px circle at 100px 100px,
+            #F9F9EC 50%,
+            transparent 51%),
+        radial-gradient(75px circle at 300px 400px,
+            #FD0000 50%,
+            transparent 51%),
+        radial-gradient(100px circle at 400px 20px,
+            #000000 50%,
+            transparent 51%),
+        radial-gradient(25px circle at 500px 250px,
+            #A23B72 50%,
+            transparent 51%),
+        radial-gradient(200px circle at 250px 200px,
+            #00B1FF 50%,
+            transparent 50.4%),
+        radial-gradient(10px circle at 50px 420px,
+            #0079FF 50%,
+            transparent 51%);
+    background-color: #FFFFE6;
+}

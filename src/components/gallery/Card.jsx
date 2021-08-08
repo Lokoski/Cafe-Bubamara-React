@@ -1,9 +1,11 @@
-import React from 'react'
+import React from 'react';
+import { CARD_IMAGES } from '../../shared/card_images';
 
-const Card = () => {
+const Card = ({ id }) => {
+    
     return (
-        <div>
-            
+        <div className="card">
+            <img alt="" src={CARD_IMAGES[id].image} />
         </div>
     )
 }

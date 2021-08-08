@@ -5,9 +5,11 @@ import AboutUs from './aboutus/AboutUs';
 import Menu from './menu/Menu';
 import ContactUs from './contactus/ContactUs';
 import Gallery from './gallery/Gallery';
-import './navbar/NavBar.css'
+import Items from './newestitems/Items'
+import './navbar/NavBar.css';
 import './homepage/HomePage.css';
-import './gallery/Gallery.css'
+import './gallery/Gallery.css';
+import './newestitems/Items.css'
 
 const MainComponent = () => {
     return (
@@ -15,6 +17,7 @@ const MainComponent = () => {
             <NavBar />
             <HomePage />
             <Gallery />
+            <Items />
         </div>
     )
 }
