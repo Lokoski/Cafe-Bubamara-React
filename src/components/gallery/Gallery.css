@@ -1,0 +1,32 @@
+.gallery-container {
+    background-image: url(../../assets/images/bubamara_fico.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    max-width: 100%;
+    max-height: 100vh;
+    background-color: rgba(22, 21, 20, 0.4);
+    /* Tint color */
+    background-blend-mode: multiply;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.gallery-title {
+    font-family: Alice;
+    font-size: 72px;
+    line-height: 1.25;
+    color: #FFFFE6;
+}
+
+.gallery-paragraph {
+    color: #FFFFE6;
+    font-size: 24px;
+    width: 40%;
+    text-align: center;
+    margin-top:0;
+    line-height: 1.2;
+}
