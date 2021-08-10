@@ -3,7 +3,6 @@ import Card from "./Card";
 import { CARD_IMAGES } from "../../shared/card_images";
 
 const Gallery = () => {
-  console.log(CARD_IMAGES[0].image);
 
   return (
     <>

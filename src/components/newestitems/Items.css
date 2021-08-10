@@ -26,3 +26,24 @@
             transparent 51%);
     background-color: #FFFFE6;
 }
+
+.items-card{
+display:flex;
+align-items: center;
+justify-content: center;
+}
+
+.items-card > img{
+    height: 300px;
+    width: 300px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+
+}
+
+.newest-card-container{
+    margin: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    
+}

@@ -1,7 +1,7 @@
 import React from 'react';
 import { CARD_IMAGES } from '../../shared/card_images';
 
-const Card = ({ id }) => {
+const Card = ({id}) => {
     
     return (
         <div className="card">
