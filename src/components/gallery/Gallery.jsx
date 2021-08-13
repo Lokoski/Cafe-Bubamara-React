@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "./Card";
+import GalleryCard from "./GalleryCard";
 import { CARD_IMAGES } from "../../shared/card_images";
 
 const Gallery = () => {
@@ -14,7 +14,7 @@ const Gallery = () => {
         </p>
         <div className="card-container">
           {CARD_IMAGES.map((image) => {
-            return <Card id={image.id} key={image.id} />;
+            return <GalleryCard key={image.id} image={image.image} />;
           })}
         </div>
         <p className="gallery-paragraph">Tag us with @cafebubamara to be featured!</p>

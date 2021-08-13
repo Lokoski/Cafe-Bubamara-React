@@ -8,7 +8,7 @@ const Items = () => {
       <h1>Newest Menu Items</h1>
       <div className="newest-card-container">
         {NEW_ITEMS.map((image) => {
-          return <ItemsCard id={image.id} />;
+          return <ItemsCard key={image.id} image={image.image} />;
         })}
       </div>
     </div>

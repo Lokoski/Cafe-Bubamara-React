@@ -13,7 +13,7 @@ export const CARD_IMAGES = [
     },
     {
         "id": 2,
-        "image": image
+        "image": Baklava
     },
     {
         "id": 3,
@@ -33,6 +33,6 @@ export const CARD_IMAGES = [
     },
     {
         "id": "7",
-        "image": Baklava
+        "image": image
     }
 ]
