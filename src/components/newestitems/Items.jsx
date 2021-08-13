@@ -11,6 +11,10 @@ const Items = () => {
           return <ItemsCard key={image.id} image={image.image} />;
         })}
       </div>
+      <div className="newest-card-buttons">
+          <button>Full Menu</button>
+          <button>Order Online</button>
+      </div>
     </div>
   );
 };
