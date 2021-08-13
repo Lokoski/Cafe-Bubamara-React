@@ -8,12 +8,19 @@ const Items = () => {
       <h1>Newest Menu Items</h1>
       <div className="newest-card-container">
         {NEW_ITEMS.map((image) => {
-          return <ItemsCard key={image.id} image={image.image} />;
+          return (
+            <ItemsCard
+              key={image.id}
+              image={image.image}
+              title={image.title}
+              description={image.description}
+            />
+          );
         })}
       </div>
       <div className="newest-card-buttons">
-          <button>Full Menu</button>
-          <button>Order Online</button>
+        <button>Full Menu</button>
+        <button>Order Online</button>
       </div>
     </div>
   );
