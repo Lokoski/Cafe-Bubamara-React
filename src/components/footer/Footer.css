@@ -1,0 +1,27 @@
+.footer-container {
+    background: #333C50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer-container> p {
+    font-family: Alice;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 15px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.footer-icons{
+    padding-bottom: 2rem;
+    color: white;
+}
+
+.footer-logo{
+    padding-bottom: 2rem;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
