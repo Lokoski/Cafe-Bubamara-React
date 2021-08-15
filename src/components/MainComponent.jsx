@@ -11,7 +11,8 @@ import './navbar/NavBar.css';
 import './homepage/HomePage.css';
 import './gallery/Gallery.css';
 import './newestitems/Items.css';
-import './media/Media.css'
+import './media/Media.css';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 const MainComponent = () => {
     return (

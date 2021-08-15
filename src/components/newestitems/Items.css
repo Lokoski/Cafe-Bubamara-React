@@ -4,7 +4,6 @@
 }
 
 .newest-items-container {
-    width: 100vw;
     background: radial-gradient(120px circle at 100px 100px,
             #EBE9D3 50%,
             transparent 51%),
@@ -58,9 +57,8 @@
 
 .newest-card-container {
     margin: 3rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
+    display: flex;
+    flex-direction: row;
 }
 
 .newest-items-container>h1 {
