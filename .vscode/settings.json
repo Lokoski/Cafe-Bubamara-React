@@ -1,20 +1,15 @@
 {
-    "cSpell.words": [
-        "Reso",
-        "aboutus",
-        "backpatio",
-        "cafebubamara",
-        "contactus",
-        "newestitems"
-    ],
-    "emmet.includeLanguages": {
-        "javascript": "javascriptreact"
-    },
-    "emmet.excludeLanguages": [
-
-        "markdown"
-    ],
-    "emmet.preferences": {
-    
-    },
+  "cSpell.words": [
+    "Reso",
+    "aboutus",
+    "backpatio",
+    "cafebubamara",
+    "contactus",
+    "newestitems"
+  ],
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "emmet.excludeLanguages": ["markdown"],
+  "emmet.preferences": {}
 }

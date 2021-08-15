@@ -1,15 +1,21 @@
-.media-container{
+.media-container {
     background-color: #f0f1eb;
     height: 100vh;
     padding-top: 3rem;
 }
 
 
-.media-container > h1{
+.media-container>h1 {
     font-family: Alice;
     font-size: 48px;
     line-height: 55px;
     text-align: center;
     color: #333C50;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.media-image > img{
+    margin: 4rem 0 0 3rem;
+    width: 629px;
+    height: 452px;
 }
