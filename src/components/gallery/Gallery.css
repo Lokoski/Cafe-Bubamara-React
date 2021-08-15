@@ -26,15 +26,15 @@
     font-size: 24px;
     width: 40%;
     text-align: center;
-    margin-top: 0;
+    margin: 1rem 0;
     line-height: 1.2;
 }
 
 .card-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 6rem;
 }
 
 /* .gallery-card {
@@ -45,7 +45,6 @@
     width: 228px;
     height: 266px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-    margin: 2.9rem;
 }
 @media only screen and (max-width: 1200px){
     .card-container {
@@ -54,7 +53,7 @@
         grid-template-rows: 1fr 1fr;
     }
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
 
     .card-container {
         display: grid;
