@@ -11,8 +11,8 @@ export const NEW_ITEMS = [
     {
         "id" : "1",
         "image" : Baklava,
-        "title" : "Chicken nuggets",
-        "description":"Sesame crusted chicken nuggets served with french fries"
+        "title" : "Chicken fingers",
+        "description":"Sesame crusted chicken fingers served with french fries"
     },
     {
         "id" : "2",

@@ -6,5 +6,15 @@
         "cafebubamara",
         "contactus",
         "newestitems"
-    ]
+    ],
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact"
+    },
+    "emmet.excludeLanguages": [
+
+        "markdown"
+    ],
+    "emmet.preferences": {
+    
+    },
 }

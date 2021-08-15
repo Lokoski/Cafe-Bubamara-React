@@ -6,8 +6,8 @@ const ItemsCard = ({image, title, description}) => {
     return (
         <div className="items-card">
             <img alt="" src={image} />
-            <div>
-            <h3>{title}</h3>
+            <div className="items-description">
+            <p className="items-title">{title}</p>
             <p>{description}</p>
             </div>
         </div>
