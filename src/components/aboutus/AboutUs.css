@@ -1,8 +1,17 @@
 .aboutus-container {
     background-color: #E5E5E5;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+        "title title"
+        "paragraph-1 image-top"
+        "paragraph-3 paragraph-3"
+        "image-bottom-left paragraph-4"
+        "paragraph-5 paragraph-5"
 }
 
-.aboutus-container>h1 {
+.aboutus-title {
     font-family: Alice;
     font-size: 48px;
     line-height: 55px;
@@ -10,4 +19,70 @@
     color: #333C50;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     padding-top: 48px;
+    grid-area: title;
 }
+
+.aboutus-container>p {
+    margin: 0px;
+}
+
+.paragraph-1 {
+    grid-area: paragraph-1;
+    background-color:red;
+}
+
+.paragraph-2 {
+    grid-area: paragraph-2;
+    background-color:green;
+}
+
+.paragraph-3 {
+    grid-area: paragraph-3;
+    background-color:blue;
+}
+
+.paragraph-4 {
+    grid-area: paragraph-4;
+    background-color:skyblue;
+}
+
+.paragraph-5 {
+    grid-area: paragraph-5;
+    background-color:red;
+}
+
+.image-top-right > img{
+    width: 421px;
+    height: 532px;
+    box-shadow: 4px 4px 20px 10px rgba(0, 0, 0, 0.25);
+    
+}
+
+/* .image-top-right{
+    background-color:purple;
+    grid-area:image-top;
+} */
+
+.image-bottom-left{
+    width: 575px;
+    height: 632px;
+    box-shadow: 4px 4px 20px 10px rgba(0, 0, 0, 0.25);
+    grid-area:image-bottom-left;
+}
+
+/* .image-bottom-left{
+    grid-area:image-bottom-left;
+    background-color:green;
+} */
+
+.image-bottom-right{
+    width: 539px;
+    height: 349px;
+    box-shadow: 4px 4px 20px 10px rgba(0, 0, 0, 0.25);
+    grid-area:image-bottom-right;
+}
+
+/* .image-bottom-right{
+    grid-area:image-bottom-left;
+    background-color:brown;
+} */
