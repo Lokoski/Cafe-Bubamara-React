@@ -8,7 +8,10 @@ const AboutUs = () => {
     <div>
       <NavBar />
       <div className="aboutus-container">
-        <h1 className="aboutus-title">Get to know us!</h1>
+        <div className="aboutus-title">
+        <h1>Get to know us!</h1>
+        </div>
+        
         <div className="paragraph-1">
           <p className="paragraph-1-top">
             Cafe Bubamara - located in Clifton, NJ’s historic Botany Village -
@@ -33,10 +36,11 @@ const AboutUs = () => {
           </p>
         </div>
 
-        {/* <div className="image-top-right"> */}
-        <img className="image-top-right" src={image_top_right} alt="" />
-        {/* </div> */}
-        <p className="paragraph-3">
+        <div className="image-top-right">
+          <img src={image_top_right} alt="" />
+        </div>
+        <div className="paragraph-3">
+        <p >
           Divided into two spaces, Cafe Bubamara boasts an intimate and cozy
           indoor seating area that makes you feel like you are sitting in
           someone’s dining room rather than a restaurant. Walk through the gates
@@ -46,9 +50,11 @@ const AboutUs = () => {
           patio, open during the summers, is the perfect atmosphere to enjoy
           your favorite Bubamara classics.
         </p>
-        {/* <div className="image-bottom-left"> */}
-        <img className="image-bottom-left" src={image_top_right} alt="" />
-        {/* </div> */}
+        </div>
+       
+        <div className="image-bottom-left">
+          <img src={image_top_right} alt="" />
+        </div>
         <div className="paragraph-4">
           <p className="paragraph-4-p">
             Ex-YU music from the 70s, 80s, and 90s fill the Cafe, taking you to
@@ -58,16 +64,18 @@ const AboutUs = () => {
             together as a community, celebrate life, and enjoy in our shared
             love of food.
           </p>
-          <img className="image-bottom-right" src={image_top_right} alt="" />
+          <div className="image-bottom-right">
+            <img src={image_top_right} alt="" />
+          </div>
         </div>
-        {/* <div className="image-bottom-right"> */}
-       
-        {/* </div> */}
-        <p className="paragraph-5">
+        <div className="paragraph-5">
+        <p >
           Come join us and create new memories, indulge in delicious food, and
           enjoy time with your loved ones in the authentic atmosphere at Cafe
           Bubamara!
         </p>
+        </div>
+        
       </div>
       <Footer />
     </div>
