@@ -6,7 +6,7 @@ import image_top_right from "../../assets/images/bubamara_fico.jpg";
 const AboutUs = () => {
   return (
     <div>
-      <NavBar />
+      {/* <NavBar /> */}
       <div className="aboutus-container">
         <div className="aboutus-title">
         <h1>Get to know us!</h1>
@@ -77,7 +77,7 @@ const AboutUs = () => {
         </div>
         
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

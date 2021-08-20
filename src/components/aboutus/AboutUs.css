@@ -17,16 +17,46 @@
     text-align: center;
     color: #000000;
     min-height: 100vh;
-    min-width: 100vw;
+    max-width: 100vw;
 }
 
-.aboutus-title{
+@media only screen and (max-width: 1200px) {
+    .aboutus-container {
+        background-color: #E5E5E5;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            "title"
+            "paragraph-1"
+            "image-top"
+            "paragraph-3"
+            "paragraph-4"
+            "image-bottom-left"
+            "paragraph-5";
+
+        max-width: 100vw;
+    } 
+
+     .image-bottom-left, .image-bottom-left > img, .image-top-right, .image-top-right >img{
+        display:hidden;
+    }
+
+    .aboutus-title {
+        grid-area: title;
+        max-width: 100vw;
+    }
+
+
+}
+
+.aboutus-title {
     grid-area: title;
     max-width: 100vw;
 }
 
-.aboutus-title > h1{
-    max-width: 100%;
+.aboutus-title>h1 {
+    max-width: 100vw;
     font-family: Alice;
     font-size: 48px;
     line-height: 55px;
@@ -49,12 +79,16 @@
     justify-content: center;
     flex-direction: column;
     text-align: center;
+    max-width: 100vw;
+
     /* background-color: red; */
 }
 
 .paragraph-3 {
     grid-area: paragraph-3;
     margin: 6rem 8.8rem;
+    max-width: 100vw;
+
     /* background-color: blue; */
 }
 
