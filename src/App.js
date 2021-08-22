@@ -1,7 +1,8 @@
 import './App.css';
 import MainComponent from './components/MainComponent';
 import AboutUs from './components/aboutus/AboutUs';
-import { BrowserRouter, Route, Switch,  Link } from "react-router-dom";
+import ContactUs from './components/contactus/ContactUs'
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import './components/aboutus/AboutUs.css';
 
 
@@ -10,12 +11,9 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Switch>
-          <Route exact path="/">
-            <MainComponent />
-          </Route>
-          <Route path="/about">
-            <AboutUs />
-          </Route>
+          <Route exact path="/" component={MainComponent} />
+          <Route path="/about" component={AboutUs} />
+          <Route path="/contact" component={ContactUs} />
         </Switch>
       </BrowserRouter>
     </div>
