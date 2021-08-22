@@ -69,7 +69,7 @@ const AboutUs = () => {
           </div>
         </div>
         <div className="paragraph-5">
-        <p >
+        <p>
           Come join us and create new memories, indulge in delicious food, and
           enjoy time with your loved ones in the authentic atmosphere at Cafe
           Bubamara!
