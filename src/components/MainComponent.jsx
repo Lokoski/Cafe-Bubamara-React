@@ -14,7 +14,6 @@ import './gallery/Gallery.css';
 import './newestitems/Items.css';
 import './media/Media.css';
 import './footer/Footer.css';
-import './aboutus/AboutUs.css';
 
 // carousel css import
 import 'react-responsive-carousel/lib/styles/carousel.min.css';

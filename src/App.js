@@ -4,6 +4,7 @@ import AboutUs from './components/aboutus/AboutUs';
 import ContactUs from './components/contactus/ContactUs'
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import './components/aboutus/AboutUs.css';
+import './components/contactus/ContactUs.css'
 
 
 function App() {
