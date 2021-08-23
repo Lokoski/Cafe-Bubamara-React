@@ -14,20 +14,20 @@
     box-shadow: none;
 }
 
-#header{
-    background-color: red;
-    overflow: auto
-}
-.items-container{
-    margin-left: -120px;
+.sticky-top{
+    background-color: white;
 }
 
-.nav-items{
-    color: black;
+/* .items-container{
+    margin-left: -120px;
+} */
+
+.nav-link{
+    color: black!important;
     font-weight: 400;
     text-transform: uppercase;
     font-family: Arial;
-    font-size: 26px;
+    font-size: 16px;
 }
 
 .fas{

@@ -20,7 +20,7 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 const MainComponent = () => {
     return (
-        <div className="main-container">
+        <div className="main-container" id="home">
             <NavBar />
             <HomePage />
             <Gallery />

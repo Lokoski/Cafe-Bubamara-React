@@ -1,145 +1,101 @@
 import logo from "../../assets/images/Cafe_Bubamara_Logo_.png";
-import React, { useState } from "react";
-import {
-  MDBNavbar,
-  MDBContainer,
-  MDBIcon,
-  MDBNavbarNav,
-  MDBNavbarItem,
-  MDBNavbarLink,
-  MDBNavbarToggler,
-  MDBCollapse,
-} from "mdb-react-ui-kit";
+import React, { useState, useEffect } from "react";
+import { MDBIcon } from "mdb-react-ui-kit";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { Navbar, Nav } from "react-bootstrap";
+import { Link } from "react-router-dom"
 
 const NavBar = () => {
-  const [showNavCentred, setShowNavCentred] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 1200);
+
+  //Navbar shows up on scroll
+
+  // useEffect(() => {
+  //   window.addEventListener("scroll", (e) => {
+  //     if (stuck === false) {
+  //       if (window.pageYOffset > 715) {
+  //         setStuck(true);
+  //       }
+  //     } else {
+  //       if (window.pageYOffset < 715) {
+  //         setStuck(false);
+  //       }
+  //     }
+  //   });
+  // }, [stuck]);
+
+  
 
   return (
-    <header>
-    <img className="logo" src={logo} alt='logo' />
-    <MDBNavbar expand='lg' className='nav-bar'>
-      <MDBContainer fluid className='nav-container' >
+    <div className={`${isMobile ? "sticky-top" : ""}`}>
+    <img className="logo" src={logo} alt="logo" />
+      <Navbar
+        collapseOnSelect
+        expand="lg"
+        bg="black"
+        variant="light"
+      >
       <div className="social-icons">
         <MDBIcon fab icon="facebook" size="2x" />
         <MDBIcon fab icon="instagram" size="2x" />
         <MDBIcon fab icon="yelp" size="2x" />
+      </div>
+      
+          {/* <Navbar.Brand
+            to="home"
+            smooth={true}
+            className="navbar-brand"
+            href="#"
+          >
+            <img href="/home" className="logo" src={logo} alt="logo" />
+          </Navbar.Brand> */}
+          <Navbar.Toggle aria-controls="responsive-navbar-nav">
+            <span>
+              <FontAwesomeIcon
+                className="hamburgerMenu"
+                icon={faBars}
+              />
+            </span>
+          </Navbar.Toggle>
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="ml-auto ">
+              <ul className="navbar-nav mr-auto mt-0">
+                <li className="nav-item mt-0">
+                  <Nav.Link eventKey="1" className="nav-link" href="#home">
+                    Home
+                  </Nav.Link>
+                </li>
+                <li className="nav-item">
+                  <Nav.Link eventKey="2" className="nav-link" href="#about" >
+                    About Us
+                  </Nav.Link>
+                </li>
+                <li className="nav-item">
+                  <Nav.Link eventKey="3" className="nav-link" href="#projects">
+                    Menu
+                  </Nav.Link>
+                </li>
+                <li className="nav-item">
+                  <Nav.Link eventKey="3" className="nav-link" href="#projects">
+                    Order Online
+                  </Nav.Link>
+                </li>
+                <li className="nav-item">
+                  <Nav.Link
+                    eventKey="4"
+                    smooth={true}
+                    className="nav-link"
+                    href="#contact"
+                  >
+                    Contact Us
+                  </Nav.Link>
+                </li>
+              </ul>
+            </Nav>
+          </Navbar.Collapse>
+      </Navbar>
     </div>
-        <MDBNavbarToggler
-          type='button'
-          data-target='#navbar'
-          aria-controls='navbar'
-          aria-expanded='false'
-          aria-label='Toggle navigation'
-          onClick={() => setShowNavCentred(!showNavCentred)}
-        >
-          <MDBIcon icon='bars' fas />
-        </MDBNavbarToggler>
-
-        <MDBCollapse navbar show={showNavCentred} center id='navbar'>
-          <MDBNavbarNav fullWidth={false} >
-
-            <MDBNavbarItem className="items-container">
-              <MDBNavbarLink  className='nav-items' active aria-current='page' href='#'>
-                Home
-              </MDBNavbarLink>
-            </MDBNavbarItem>
-            <i class="fas fa-circle"></i>
-            <MDBNavbarItem>
-              <MDBNavbarLink className='nav-items' href='#'>About Us</MDBNavbarLink>
-            </MDBNavbarItem>
-            <i class="fas fa-circle"></i>
-            <MDBNavbarItem>
-              <MDBNavbarLink className='nav-items' href='#'>Menu</MDBNavbarLink>
-            </MDBNavbarItem>
-            <i class="fas fa-circle"></i>
-            <MDBNavbarItem>
-              <MDBNavbarLink className='nav-items' href='#'>Contact Us</MDBNavbarLink>
-            </MDBNavbarItem>
-            <i class="fas fa-circle"></i>
-            <MDBNavbarItem>
-              <MDBNavbarLink className='nav-items' href='#'>Order Online</MDBNavbarLink>
-            </MDBNavbarItem>
-
-          </MDBNavbarNav>
-        </MDBCollapse>
-      </MDBContainer>
-    </MDBNavbar>
-
-    {/* <header id="header">
-    		<nav className="navbar navbar-expand-lg navbar-dark sticky-top">
-    			<div class="container">
-    				<a class="navbar-brand "href="index.html"><img class="logo img-fluid" src={logo} alt="logo" /> </a>
-    				<button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbar">
-    					<span class="navbar-toggler-icon"></span>
-    				</button>
-    				<div class="collapse ml-auto navbar-collapse" id="navbar">
-    					<ul class="navbar-nav">
-    						<li class="nav-item active"><a class="nav-link" href="#aboutus">About</a></li>
-    						<li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
-    						<li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
-    						<li class="nav-item"><a class="nav-link" href="#getInTouch">Contact</a></li>
-    					</ul>
-    				</div>
-    			</div>
-    		</nav>
-    	</header> */}
-
-     </header>
-    // <header id="header">
-    //  <a class="navbar-brand " href="index.html">
-    //         <img class="logo img-fluid" src={logo} alt="logo" />
-    //       </a>
-    //   <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
-    //     <div class="container">
-    //       <MDBNavbarToggler
-    //         type="button"
-    //         data-target="#navbar"
-    //         aria-controls="navbar"
-    //         aria-expanded="false"
-    //         aria-label="Toggle navigation"
-    //         onClick={() => setShowNavCentred(!showNavCentred)}
-    //       >
-    //         <MDBIcon icon="bars" fas />
-    //       </MDBNavbarToggler>
-    //       <div class="collapse ml-auto navbar-collapse" id="navbar">
-    //         <ul class="navbar-nav">
-    //           <li class="nav-item active">
-    //             <a class="nav-link" href="#aboutus">
-    //               About
-    //             </a>
-    //           </li>
-    //           <li class="nav-item">
-    //             <a class="nav-link" href="menu.html">
-    //               Menu
-    //             </a>
-    //           </li>
-    //           <li class="nav-item">
-    //             <a class="nav-link" href="#gallery">
-    //               Gallery
-    //             </a>
-    //           </li>
-    //           <li class="nav-item">
-    //             <a class="nav-link" href="#getInTouch">
-    //               Contact
-    //             </a>
-    //           </li>
-    //         </ul>
-    //         <div>
-    //           <div class="col-md-4 col-xl-2">
-    //             <span
-    //               class="btn btn-md btn-dark text-nowrap"
-    //               href="#reserveModal"
-    //               role="button"
-    //               id="reserveButton"
-    //             >
-    //               Book a Table
-    //             </span>
-    //           </div>
-    //         </div>
-    //       </div>
-    //     </div>
-    //   </nav>
-    // </header>
   );
 };
 
