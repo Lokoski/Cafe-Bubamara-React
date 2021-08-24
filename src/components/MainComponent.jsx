@@ -25,7 +25,7 @@ const MainComponent = () => {
             <HomePage />
             <Gallery />
             <Items />
-            <Media />
+            {/* <Media /> */}
             <Footer />
         </div>
     )

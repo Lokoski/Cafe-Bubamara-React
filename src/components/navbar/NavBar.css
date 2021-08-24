@@ -4,15 +4,12 @@
     margin-right: auto;
     width: 50%;
     padding: 20px 0;
-    overflow: auto
 }
 
-.nav-bar{
-    display:flex;
-    height: 60px;
-    background-color: #fff;
-    box-shadow: none;
+.navbar {
+box-shadow: none;
 }
+
 
 .sticky-top{
     background-color: white;
@@ -30,12 +27,6 @@
     font-size: 16px;
 }
 
-.fas{
-    margin: auto;
-    height: 18px;
-    padding: 0 20px;
-    overflow: auto
-}
 
 .fab{
     padding: 0 10px;
