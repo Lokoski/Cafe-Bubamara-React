@@ -1,4 +1,5 @@
 import React from "react";
+import uber from "../../assets/images/onlineservices-logos/UberEatsLogo.png"
 
 const Online = () => {
   const orderUber = () => {
@@ -21,15 +22,18 @@ const Online = () => {
 
   return (
     <div className="online-container">
-      <button onClick={orderUber} className="ubereats">
-        Order With UberEats
-      </button>
-      <button className="dashdoor" onClick={orderDoordash}>
-        Order With DashDoor
-      </button>
-      <button className="postmates" onClick={orderPostmates}>
-        Order With Postmates
-      </button>
+    <div className="uber">
+    <button onClick={orderUber} className="ubereats-btn" />
+      <h5 className="order-text">Order With UberEats</h5>
+    </div>
+    <div className="doordash">
+    <button onClick={orderDoordash} className="doordash-btn" />
+      <h5 className="order-text">Order With Doordash</h5>
+    </div>
+    <div className="postmates">
+    <button onClick={orderPostmates} className="postmates-btn" />
+      <h5 className="order-text">Order With Postmates</h5>
+    </div>
     </div>
   );
 };
