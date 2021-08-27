@@ -4,7 +4,7 @@ const Card = ({image}) => {
     
     return (
         <div className="gallery-card">
-            <img alt="" src={image} />
+            <img alt="menuItem" src={image} />
         </div>
     )
 }

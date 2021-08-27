@@ -4,11 +4,9 @@
     background-size: cover;
     background-position: center;
     max-width: 100%;
-    max-height: 100vh;
+    max-height: 100%;
     background-color: rgba(22, 21, 20, 0.4); /* Tint color */
     background-blend-mode: multiply;
-    width: 100vw;
-    height: 100vh; 
     background-size: 100% 100%;
     display: flex;
     align-items: center;
@@ -49,11 +47,11 @@
     height: 230px;
     background: #F9F9EC;
     border-radius: 150px;
-    margin: auto;
-    margin-top:50px;
+    margin:50px 0;
     border: 3px dashed #000000;
     box-sizing: border-box;
     box-shadow: 0 0 0 6px #F9F9EC; /* around the entire circle/box */
+
 }
 
 .reso-border>p {

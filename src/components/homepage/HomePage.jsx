@@ -8,7 +8,6 @@ const HomePage = () => {
               inviting indoor and outdoor seating.</p>
               <div className="reso-border">
                 <p>FOR PARTIES OF 9 OR MORE PLEASE CALL (973) 928-1371</p>
-                <p></p>
                 </div>
         </div>
     )
