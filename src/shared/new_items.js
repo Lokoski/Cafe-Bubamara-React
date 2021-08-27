@@ -12,12 +12,12 @@ export const NEW_ITEMS = [
         "id" : "1",
         "image" : Baklava,
         "title" : "Chicken fingers",
-        "description":"Sesame crusted chicken fingers served with french fries"
+        "description":"Sesame crusted chicken served with french fries"
     },
     {
         "id" : "2",
         "image" : Baklava,
         "title" : "Beef or Pork Tortilla",
-        "description":"Choice of Beef Prosciutto or Smoked Pork Served wih french fries"
+        "description":"Beef Prosciutto or Smoked Pork Served wih french fries"
     },
 ]
