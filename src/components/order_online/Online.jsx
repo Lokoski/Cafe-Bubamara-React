@@ -1,5 +1,6 @@
 import React from "react";
-import uber from "../../assets/images/onlineservices-logos/UberEatsLogo.png"
+import Navbar from "../navbar/NavBar";
+import Footer from "../footer/Footer";
 
 const Online = () => {
   const orderUber = () => {
@@ -21,20 +22,25 @@ const Online = () => {
   };
 
   return (
-    <div className="online-container">
-    <div className="uber">
-    <button onClick={orderUber} className="ubereats-btn" />
-      <h5 className="order-text">Order With UberEats</h5>
-    </div>
-    <div className="doordash">
-    <button onClick={orderDoordash} className="doordash-btn" />
-      <h5 className="order-text">Order With Doordash</h5>
-    </div>
-    <div className="postmates">
-    <button onClick={orderPostmates} className="postmates-btn" />
-      <h5 className="order-text">Order With Postmates</h5>
-    </div>
-    </div>
+    <>
+      <Navbar />
+      <div className="online-container">
+        <div className="uber">
+          <button onClick={orderUber} className="ubereats-btn" />
+          <h5 className="order-text">Order With UberEats</h5>
+        </div>
+        <div className="doordash">
+          <button onClick={orderDoordash} className="doordash-btn" />
+          <h5 className="order-text">Order With Doordash</h5>
+        </div>
+        <div className="postmates">
+          <button onClick={orderPostmates} className="postmates-btn" />
+          <h5 className="order-text">Order With Postmates</h5>
+        </div>
+      </div>
+
+      <Footer />
+    </>
   );
 };
 

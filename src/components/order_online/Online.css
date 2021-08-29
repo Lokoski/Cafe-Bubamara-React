@@ -1,12 +1,12 @@
-.online-container{
-    height: 100vh;
+.online-container {
+    height: 70vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
-.ubereats-btn{
+.ubereats-btn {
     background: url(../../assets/images/onlineservices-logos/Uber-Eats-Icon.png) no-repeat center;
     margin: 3rem;
     height: 250px;
@@ -14,7 +14,7 @@
     border: none;
 }
 
-.doordash-btn{
+.doordash-btn {
     background: url(../../assets/images/onlineservices-logos/doordash-logo.png) no-repeat center;
     margin: 3rem;
     height: 250px;
@@ -22,7 +22,7 @@
     border: none;
 }
 
-.postmates-btn{
+.postmates-btn {
     background: url(../../assets/images/onlineservices-logos/postmates-logo.png) no-repeat center;
     margin: 3rem;
     height: 250px;
@@ -31,11 +31,44 @@
 }
 
 
-.ubereats-btn:hover, .doordash-btn:hover, .postmates-btn:hover {
+.ubereats-btn:hover,
+.doordash-btn:hover,
+.postmates-btn:hover {
     opacity: .8;
     transform: scale(1.15);
 }
 
-.order-text{
+.order-text {
     text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .online-container {
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ubereats-btn {
+        background: url(../../assets/images/onlineservices-logos/Uber-Eats-Icon.png) no-repeat center;
+        height: 150px;
+        width: 150px;
+        border: none;
+    }
+
+    .doordash-btn {
+        background: url(../../assets/images/onlineservices-logos/doordash-logo.png) no-repeat center;
+        height: 150px;
+        width: 150px;
+        border: none;
+    }
+
+    .postmates-btn {
+        background: url(../../assets/images/onlineservices-logos/postmates-logo.png) no-repeat center;
+        height: 150px;
+        width: 150px;
+        border: none;
+    }
 }
